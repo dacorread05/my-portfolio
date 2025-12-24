@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+  <!-- D shape -->
+  <rect x="6" y="10" width="3" height="3" fill="#2563eb"/>
+  <rect x="9" y="10" width="3" height="3" fill="#2563eb"/>
+  <rect x="6" y="13" width="3" height="3" fill="#2563eb"/>
+  <rect x="12" y="13" width="3" height="3" fill="#2563eb"/>
+  <rect x="6" y="16" width="3" height="3" fill="#2563eb"/>
+  <rect x="12" y="16" width="3" height="3" fill="#2563eb"/>
+  <rect x="6" y="19" width="3" height="3" fill="#2563eb"/>
+  <rect x="12" y="19" width="3" height="3" fill="#2563eb"/>
+  <rect x="6" y="22" width="3" height="3" fill="#2563eb"/>
+  <rect x="9" y="22" width="3" height="3" fill="#2563eb"/>
+  
+  <!-- A shape overlapping -->
+  <rect x="20" y="13" width="3" height="3" fill="#f59e0b"/>
+  <rect x="17" y="16" width="3" height="3" fill="#f59e0b"/>
+  <rect x="23" y="16" width="3" height="3" fill="#f59e0b"/>
+  <rect x="17" y="19" width="3" height="3" fill="#f59e0b"/>
+  <rect x="20" y="19" width="3" height="3" fill="#f59e0b"/>
+  <rect x="23" y="19" width="3" height="3" fill="#f59e0b"/>
+  <rect x="17" y="22" width="3" height="3" fill="#f59e0b"/>
+  <rect x="23" y="22" width="3" height="3" fill="#f59e0b"/>
+  <rect x="17" y="25" width="3" height="3" fill="#f59e0b"/>
+  <rect x="23" y="25" width="3" height="3" fill="#f59e0b"/>
+</svg>

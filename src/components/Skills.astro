@@ -1,0 +1,50 @@
+---
+const skills = [
+  // Programming Languages
+    { name: 'JavaScript', icon: '⚡', category: 'language' },
+    { name: 'TypeScript', icon: '🔷', category: 'language' },
+    { name: 'Apex', icon: '⚙️', category: 'language' },
+    { name: 'SuiteScript', icon: '📜', category: 'language' },
+
+    // Frameworks & Tools
+    { name: 'React', icon: '⚛️', category: 'framework' },
+    { name: 'Angular', icon: '🅰️', category: 'framework' },
+    { name: 'Node.js', icon: '🟢', category: 'framework' },
+
+    // Platforms
+    { name: 'Boomi', icon: '🔗', category: 'platform' },
+    { name: 'NetSuite', icon: '📊', category: 'platform' },
+    { name: 'Salesforce', icon: '☁️', category: 'platform' },
+
+    // Databases
+    { name: 'MySQL', icon: '🗄️', category: 'database' },
+    { name: 'MongoDB', icon: '🍃', category: 'database' },
+    { name: 'PostgreSQL', icon: '🐘', category: 'database' },
+
+    // Tools
+    { name: 'Git', icon: '🔧', category: 'tool' },
+    { name: 'Postman', icon: '📮', category: 'tool' },
+];
+---
+
+<section id="skills" class="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+    <div class="mb-12">
+        <h2 class="section-title mb-2">Skills</h2>
+        <p class="text-text-muted">Technologies and tools I work with</p>
+    </div>
+
+    <div class="bg-bg-secondary p-8 lg:p-12 border-2 border-border">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 lg:gap-6">
+        {skills.map((skill) => (
+            <div class="card p-6 text-center group">
+            <span class="text-4xl block mb-3 transition-transform group-hover:scale-110">
+                {skill.icon}
+            </span>
+            <div class="text-sm font-semibold text-text">
+                {skill.name}
+            </div>
+            </div>
+        ))}
+        </div>
+    </div>
+</section>

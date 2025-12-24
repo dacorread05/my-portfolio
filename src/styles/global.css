@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-bg text-text font-sans antialiased;
+    }
+}
+
+@layer components {
+
+    /* Botones reutilizables */
+    .btn-primary {
+        @apply inline-flex items-center gap-2 px-8 py-3.5 bg-primary text-white font-semibold text-sm border-2 border-primary transition-all duration-200 hover:bg-primary-dark hover:border-primary-dark hover:-translate-y-0.5 hover:shadow-md;
+    }
+
+    .btn-secondary {
+        @apply inline-flex items-center gap-2 px-8 py-3.5 bg-transparent text-text font-semibold text-sm border-2 border-border transition-all duration-200 hover:border-primary hover:text-primary hover:-translate-y-0.5;
+    }
+
+    /* Título de sección con acento pixel */
+    .section-title {
+        @apply font-pixel text-2xl md:text-3xl text-text relative inline-block;
+    }
+
+    .section-title::before {
+        content: '■';
+        @apply text-primary mr-2;
+    }
+
+    /* Card con hover */
+    .card {
+        @apply bg-bg-secondary border-2 border-border transition-all duration-200 hover:border-primary hover:-translate-y-1 hover:shadow-md;
+    }
+
+    /* Grid pixelado para fondos */
+    .pixel-grid {
+        background-image:
+            linear-gradient(theme('colors.border.DEFAULT') 1px, transparent 1px),
+            linear-gradient(90deg, theme('colors.border.DEFAULT') 1px, transparent 1px);
+        background-size: 40px 40px;
+        opacity: 0.5;
+    }
+}
