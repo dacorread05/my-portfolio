@@ -1,29 +1,31 @@
 ---
+import SkillIcon from './SkillIcon.astro';
+
 const skills = [
   // Programming Languages
-    { name: 'JavaScript', icon: '⚡', category: 'language' },
-    { name: 'TypeScript', icon: '🔷', category: 'language' },
-    { name: 'Apex', icon: '⚙️', category: 'language' },
-    { name: 'SuiteScript', icon: '📜', category: 'language' },
+    { name: 'JavaScript', icon: 'javascript', category: 'language' },
+    { name: 'TypeScript', icon: 'typescript', category: 'language' },
+    { name: 'Apex', icon: 'apex', category: 'language' },
+    { name: 'SuiteScript', icon: 'suitescript', category: 'language' },
 
     // Frameworks & Tools
-    { name: 'React', icon: '⚛️', category: 'framework' },
-    { name: 'Angular', icon: '🅰️', category: 'framework' },
-    { name: 'Node.js', icon: '🟢', category: 'framework' },
+    { name: 'React', icon: 'react', category: 'framework' },
+    { name: 'Angular', icon: 'angular', category: 'framework' },
+    { name: 'Node.js', icon: 'nodejs', category: 'framework' },
 
     // Platforms
-    { name: 'Boomi', icon: '🔗', category: 'platform' },
-    { name: 'NetSuite', icon: '📊', category: 'platform' },
-    { name: 'Salesforce', icon: '☁️', category: 'platform' },
+    { name: 'Boomi', icon: 'boomi', category: 'platform' },
+    { name: 'NetSuite', icon: 'netsuite', category: 'platform' },
+    { name: 'Salesforce', icon: 'salesforce', category: 'platform' },
 
     // Databases
-    { name: 'MySQL', icon: '🗄️', category: 'database' },
-    { name: 'MongoDB', icon: '🍃', category: 'database' },
-    { name: 'PostgreSQL', icon: '🐘', category: 'database' },
+    { name: 'MySQL', icon: 'mysql', category: 'database' },
+    { name: 'MongoDB', icon: 'mongodb', category: 'database' },
+    { name: 'PostgreSQL', icon: 'postgresql', category: 'database' },
 
     // Tools
-    { name: 'Git', icon: '🔧', category: 'tool' },
-    { name: 'Postman', icon: '📮', category: 'tool' },
+    { name: 'Git', icon: 'git', category: 'tool' },
+    { name: 'Postman', icon: 'postman', category: 'tool' },
 ];
 ---
 
@@ -37,12 +39,10 @@ const skills = [
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 lg:gap-6">
         {skills.map((skill) => (
             <div class="card p-6 text-center group">
-            <span class="text-4xl block mb-3 transition-transform group-hover:scale-110">
-                {skill.icon}
-            </span>
-            <div class="text-sm font-semibold text-text">
+                <SkillIcon icon={skill.icon} name={skill.name} />
+                <div class="text-sm font-semibold text-text">
                 {skill.name}
-            </div>
+                </div>
             </div>
         ))}
         </div>

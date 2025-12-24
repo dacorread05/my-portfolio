@@ -1,0 +1,38 @@
+---
+interface Props {
+    icon: string;
+    name: string;
+}
+
+const { icon, name } = Astro.props;
+
+const customIcons: Record<string, string> = {
+    javascript: 'icon-javascript.svg',
+    typescript: 'icon-typescript.svg',
+    apex: 'icon-apex.svg',
+    suitescript: 'icon-suitescript.svg',
+    react: 'icon-react.svg',
+    angular: 'icon-angular.svg',
+    nodejs: 'icon-nodejs.svg',
+    boomi: 'icon-boomi.svg',
+    netsuite: 'icon-netsuite.svg',
+    salesforce: 'icon-salesforce.svg',
+    mysql: 'icon-mysql.svg',
+    mongodb: 'icon-mongodb.svg',
+    postgresql: 'icon-postgresql.svg',
+    git: 'icon-git.svg',
+    postman: 'icon-postman.svg'
+};
+---
+
+{customIcons[icon] ? (
+    <img
+        src={customIcons[icon]}
+        alt={name}
+        class="w-10 h-10 mx-auto mb-3 transition-transform group-hover:scale-110"
+    />
+) : (
+    <span class="text-4xl block mb-3 transition-transform group-hover:scale-110">
+        {icon}
+    </span>
+)}
