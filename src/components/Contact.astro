@@ -2,74 +2,76 @@
 const contactInfo = {
   email: "dacorread05@gmail.com",
   phone: "+57 305 8153331",
-  linkedin: "https://linkedin.com/in/diego-alejandro-correa-diaz",
-  github: "https://github.com/dacorread",
+  linkedin: "https://www.linkedin.com/in/diego-alejandro-correa-diaz-2597751b7/",
+  github: "https://github.com/dacorread05",
   location: "Bogotá, Colombia"
 };
 ---
 
 <section id="contact" class="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-  <div class="mb-12">
-    <h2 class="section-title mb-2">Contact</h2>
-    <p class="text-text-muted">Let's talk about your next project</p>
-  </div>
-
-  <div class="max-w-4xl mx-auto bg-bg-secondary border-2 border-border p-8 lg:p-12">
-    <div class="text-center mb-10">
-      <h3 class="text-2xl font-semibold text-text mb-3">
-        Have a project in mind?
-      </h3>
-      <p class="text-text-muted text-lg">
-        I'm available for new opportunities and collaborations. Feel free to reach out!
-      </p>
+    <div class="mb-12">
+        <h2 class="section-title mb-2">Contact</h2>
+        <p class="text-text-muted">Let's talk about your next project</p>
     </div>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <!-- Email -->
-      <a href={`mailto:${contactInfo.email}`} class="card p-6 text-center group">
-          <img src="/icon-email.svg" alt="Email" class="w-12 h-12 mx-auto mb-3 transition-transform group-hover:scale-110" />
-          <div class="font-semibold text-text mb-1">Email</div>
-          <div class="text-sm text-text-muted break-all">{contactInfo.email}</div>
-      </a>
+    <div class="max-w-4xl mx-auto bg-bg-secondary border-2 border-border p-8 lg:p-12">
+        <div class="text-center mb-10">
+        <h3 class="text-2xl font-semibold text-text mb-3">
+            Have a project in mind?
+        </h3>
+        <p class="text-text-muted text-lg">
+            I'm available for new opportunities and collaborations. Feel free to reach out!
+        </p>
+        </div>
 
-      <!-- LinkedIn -->
-      <a href={contactInfo.linkedin} target="_blank" rel="noopener noreferrer" class="card p-6 text-center group">
-        <img src="/icon-linkedin.svg" alt="LinkedIn" class="w-12 h-12 mx-auto mb-3 transition-transform group-hover:scale-110" />
-        <div class="font-semibold text-text mb-1">LinkedIn</div>
-        <div class="text-sm text-text-muted">View profile</div>
-      </a>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Email -->
+        <a href={`mailto:${contactInfo.email}`} class="card p-6 text-center group">
+            <img src="/icon-email.svg" alt="Email" class="w-12 h-12 mx-auto mb-3 transition-transform group-hover:scale-110" />
+            <div class="font-semibold text-text mb-1">Email</div>
+            <div class="text-sm text-text-muted break-all">{contactInfo.email}</div>
+        </a>
 
-      <!-- GitHub -->
-      <a href={contactInfo.github} target="_blank" rel="noopener noreferrer" class="card p-6 text-center group">
-        <img src="/icon-github.svg" alt="GitHub" class="w-12 h-12 mx-auto mb-3 transition-transform group-hover:scale-110" />
-        <div class="font-semibold text-text mb-1">GitHub</div>
-        <div class="text-sm text-text-muted">@dacorread</div>
-      </a>
+        <!-- LinkedIn -->
+        <a href={contactInfo.linkedin} target="_blank" rel="noopener noreferrer" class="card p-6 text-center group">
+            <img src="/icon-linkedin.svg" alt="LinkedIn" class="w-12 h-12 mx-auto mb-3 transition-transform group-hover:scale-110" />
+            <div class="font-semibold text-text mb-1">LinkedIn</div>
+            <div class="text-sm text-text-muted">
+            View profile
+            </div>
+        </a>
 
-      <!-- Phone -->
-      <a href={`tel:${contactInfo.phone}`} class="card p-6 text-center group">
-        <img src="/icon-phone.svg" alt="Phone" class="w-12 h-12 mx-auto mb-3 transition-transform group-hover:scale-110" />
-        <div class="font-semibold text-text mb-1">Phone</div>
-        <div class="text-sm text-text-muted">{contactInfo.phone}</div>
-      </a>
+        <!-- GitHub -->
+        <a href={contactInfo.github} target="_blank" rel="noopener noreferrer" class="card p-6 text-center group">
+            <img src="/icon-github.svg" alt="GitHub" class="w-12 h-12 mx-auto mb-3 transition-transform group-hover:scale-110" />
+            <div class="font-semibold text-text mb-1">GitHub</div>
+            <div class="text-sm text-text-muted">@dacorread05</div>
+        </a>
 
-      <!-- Location -->
-      <div class="card p-6 text-center">
-        <img src="/icon-location.svg" alt="Location" class="w-12 h-12 mx-auto mb-3" />
-        <div class="font-semibold text-text mb-1">Location</div>
-        <div class="text-sm text-text-muted">{contactInfo.location}</div>
-      </div>
+        <!-- Phone -->
+        <a href={`tel:${contactInfo.phone}`} class="card p-6 text-center group">
+            <img src="/icon-phone.svg" alt="Phone" class="w-12 h-12 mx-auto mb-3 transition-transform group-hover:scale-110" />
+            <div class="font-semibold text-text mb-1">Phone</div>
+            <div class="text-sm text-text-muted">{contactInfo.phone}</div>
+        </a>
 
-      <!-- Get in touch CTA -->
-      <div class="card p-6 flex flex-col items-center justify-center bg-primary border-primary text-white group hover:bg-primary-dark">
-        <img
-          src="/icon-message-white.svg"
-          alt="Message"
-          class="w-12 h-12 mb-3 transition-transform group-hover:scale-110"
-        />
-        <div class="font-semibold mb-1">Get in touch</div>
-        <div class="text-sm opacity-90">Let's connect!</div>
-      </div>
+        <!-- Location -->
+        <div class="card p-6 text-center">
+            <img src="/icon-location.svg" alt="Location" class="w-12 h-12 mx-auto mb-3" />
+            <div class="font-semibold text-text mb-1">Location</div>
+            <div class="text-sm text-text-muted">{contactInfo.location}</div>
+        </div>
+
+        <!-- Get in touch CTA -->
+        <div class="card p-6 flex flex-col items-center justify-center bg-primary border-primary text-white group hover:bg-primary-dark">
+            <img
+            src="/icon-message-white.svg"
+            alt="Message"
+            class="w-12 h-12 mb-3 transition-transform group-hover:scale-110"
+            />
+            <div class="font-semibold mb-1">Get in touch</div>
+            <div class="text-sm opacity-90">Let's connect!</div>
+        </div>
+        </div>
     </div>
-  </div>
 </section>
